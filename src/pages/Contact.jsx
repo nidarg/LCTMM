@@ -34,6 +34,7 @@ const Contact = () => {
   }
   return (
     <div className='page'>
+
       <form className='form' ref={form} onSubmit={sendEmail}>
         <div className='form-row'>
           <label className='form-label'>Name</label>
@@ -43,6 +44,11 @@ const Contact = () => {
         <div className='form-row'>
           <label className='form-label'>Email</label>
           <input required className='form-input' type='email' name='user_email' />
+        </div>
+
+        <div className='form-row'>
+          <label className='form-label'>Telefon</label>
+          <input required className='form-input' type='text' name='user_phone' />
         </div>
 
         <div className='form-row'>
