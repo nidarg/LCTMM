@@ -36,12 +36,12 @@ const Contact = () => {
       <form className='form' ref={form} onSubmit={sendEmail}>
         <div className='form-row'>
           <label className='form-label'>Name</label>
-          <input className='form-input' type='text' name='user_name' />
+          <input required className='form-input' type='text' name='user_name' />
         </div>
 
         <div className='form-row'>
           <label className='form-label'>Email</label>
-          <input className='form-input' type='email' name='user_email' />
+          <input required className='form-input' type='email' name='user_email' />
         </div>
 
         <div className='form-row'>
@@ -59,7 +59,7 @@ const Contact = () => {
         />
         <input
           disabled={!isVerified}
-          className='btn btn-block'
+          className={disabled ? 'disabled btn-block': 'btn btn-block'}
           type='submit'
           value='Send'
         />
