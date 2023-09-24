@@ -66,7 +66,7 @@ const Contact = () => {
           />
         </div>
         <ReCAPTCHA
-          sitekey='6LfusjQoAAAAAG0XzuLXhEF2e1f2KwCQuCsdR_Za'
+          sitekey = {`${SITE_KEY}`}
           onChange={onChange}
         />
         <input
