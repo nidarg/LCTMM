@@ -35,14 +35,14 @@ return(
 
 const Wrapper = styled.div`
   .contrainer{
-   
     max-width:90vw;
     height: 100vh;
     display: flex;
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    gap:3rem;
+    gap-row:3rem;
+    gap-col:3rem;
   }
   .item{
     // max-width:30rem;
