@@ -66,7 +66,7 @@ const Contact = () => {
           />
         </div>
         <ReCAPTCHA
-          sitekey = {`${SITE_KEY}`}
+          sitekey = {`${import.meta.env.VITE_EMAIL_PUBLIC_KEY}`}
           onChange={onChange}
         />
         <input
