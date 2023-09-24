@@ -42,7 +42,7 @@ const Wrapper = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    gap:5rem;
+    gap:3rem;
   }
   .item{
     // max-width:30rem;
