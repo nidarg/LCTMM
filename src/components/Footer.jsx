@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <Wrapper>
     <div className='footer'>
-      <p>&copy;2023 LCTM</p>
+      <p>&copy;2023 LCTMM</p>
       <p>GG</p>
     </div>
     </Wrapper>
