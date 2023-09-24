@@ -5,6 +5,7 @@ import ReCAPTCHA from 'react-google-recaptcha'
 const Contact = () => {
   const form = useRef()
   const [isVerified, setIsVerified] = useState(false)
+  const [disabled, setDisabled] = useState(false)
 
   function onChange(value) {
     console.log('Captcha value:', value)
@@ -47,6 +48,7 @@ const Contact = () => {
         <div className='form-row'>
           <label className='form-label'>Message</label>
           <textarea
+          required
             rows={5}
             cols={10}
             className='form-textarea'
@@ -59,7 +61,7 @@ const Contact = () => {
         />
         <input
           disabled={!isVerified}
-          className={disabled ? 'disabled btn-block': 'btn btn-block'}
+          className={!isVerified ? 'disabled btn-block': 'btn btn-block'}
           type='submit'
           value='Send'
         />
