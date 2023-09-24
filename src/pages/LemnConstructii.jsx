@@ -73,7 +73,7 @@ width:80%;
   color:var(--primary-500);
 }
 
-  @media (min-width: 376px) {
+  @media screen and  (min-width: 376px) {
     .container {
       padding-top:10rem;
      display: flex;
