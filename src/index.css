@@ -193,7 +193,7 @@ ul {
   background: var(--primary-700);
 }
 .btn-block {
-  width: 100%;
+  width: 90%;
 }
 
 /* alerts */
@@ -214,14 +214,37 @@ ul {
 }
 /* form */
 
+.contact{
+  /* width: 100%; */
+  max-width: var(--fixed-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 1rem 1rem; */
+  margin:1rem;
+  font-size: var(--extra-small-text);
+  background: white;
+  
+}
+
+.contact p, h5{
+  margin-bottom: .5rem;
+}
 .form {
-  width: 100%;
+  /* max-width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   max-width: var(--fixed-width);
   background: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
-  padding: 2rem 2.5rem;
-  margin: 3rem auto;
+   /* padding: .5rem 1rem;  */
+   /* margin: 3rem auto; */
+  /* padding: 2rem 2.5rem;
+  margin: 3rem auto; */
 }
 .form-label {
   display: block;
@@ -240,6 +263,7 @@ ul {
 }
 
 .form-row {
+  width: 90%;
   margin-bottom: 1rem;
 }
 
@@ -323,8 +347,59 @@ PROJECT CSS
   font-size: clamp(1rem, 2vw, 2rem);
 }
 
+
+
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: var(--view-width);
+  max-width: var(--max-width); */
+  /* margin: 0 auto; */
+  align-items: space-around;
+}
+
+
+
 @media screen and (min-width: 600px) {
   .text-box {
     font-size: clamp(1.5rem, 3vw, 3rem);
   }
 }
+
+@media screen and (min-width: 769px) {
+  .form {
+    width: 100%;
+    max-width: var(--fixed-width);
+    background: var(--white);
+    border-radius: var(--borderRadius);
+    box-shadow: var(--shadow-2);
+     /* padding: .5rem 1rem;
+    margin: 3rem auto; */
+    padding: 2rem 2.5rem;
+    margin: 3rem auto;
+  }
+  .form-row{
+    width: 90%;
+  }
+
+  .contact{
+    margin: 3rem auto;
+    width: 100%;
+    max-width: var(--fixed-width);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem;
+    margin:1rem;
+    font-size: var(--large-text);
+    background: white;
+    margin-bottom: 2rem;
+  }
+  .contact p, h5{
+    margin-bottom: 1rem;
+  }
+  }
+

@@ -5,7 +5,6 @@ import ReCAPTCHA from 'react-google-recaptcha'
 const Contact = () => {
   const form = useRef()
   const [isVerified, setIsVerified] = useState(false)
-  const [disabled, setDisabled] = useState(false)
 
   function onChange(value) {
     console.log('Captcha value:', value)
@@ -33,9 +32,14 @@ const Contact = () => {
       )
   }
   return (
-    <div className='page'>
-
+    <div className="contact-page">
+      <div className="contact">
+          <h5>Informatii de contact:</h5>
+        <p>Email: lctmmoffice@gmail.com</p>
+        <p>Telefoane:0743845283 / 0770804170 </p>
+      </div>
       <form className='form' ref={form} onSubmit={sendEmail}>
+      
         <div className='form-row'>
           <label className='form-label'>Name</label>
           <input required className='form-input' type='text' name='user_name' />
@@ -72,7 +76,7 @@ const Contact = () => {
           value='Send'
         />
       </form>
-    </div>
+  </div>
   )
 }
 
