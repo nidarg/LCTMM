@@ -225,7 +225,7 @@ ul {
   margin:1rem;
   font-size: var(--extra-small-text);
   background: white;
-  
+  color: var(--primary-500);
 }
 
 .contact p, h5{
