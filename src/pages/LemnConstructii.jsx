@@ -41,8 +41,9 @@ const Wrapper = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items: center;
-    gap-row:3rem;
-    gap-col:3rem;
+
+    // gap-row:3rem;
+    // gap-col:3rem;
   }
   .item{
     // max-width:30rem;
@@ -54,7 +55,7 @@ const Wrapper = styled.div`
     justify-content:center;
     align-items: center;
     box-shadow:var( --shadow-4);
-    gap:1rem;
+    margin:2rem;
   }
   .image{
 max-height: 70%;
