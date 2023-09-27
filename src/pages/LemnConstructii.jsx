@@ -16,6 +16,11 @@ const LemnConstructii = () => {
 
 return(
   <Wrapper>
+    <>
+      <div className="text">
+        <p>Preturile sunt negociabile in functie de cantittatea comandata</p>
+        <p>Asiguram transport in orice zona a tarii</p>
+      </div>
       <div className='container'>
         {items.map((item)=>{
           return(
@@ -29,12 +34,13 @@ return(
         })}
        
       </div>
+    </>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  .contrainer{
+  .container{
     max-width:90vw;
     height: 100vh;
     display: flex;
@@ -68,6 +74,15 @@ const Wrapper = styled.div`
   weight:700;
   color:var(--primary-500);
 }
+.text{
+  margin:2rem auto 0;
+  color:var(--primary-500);
+  font-size:1rem;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
 
   @media screen and  (min-width: 376px) {
     .container {
@@ -76,6 +91,10 @@ const Wrapper = styled.div`
      justify-content: space-around;
      align-items:center;
      flex-wrap:wrap;
+    }
+
+    .text{
+      font-size:1.4rem;
     }
 
     .item{
