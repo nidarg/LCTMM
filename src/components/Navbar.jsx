@@ -6,7 +6,7 @@ import {FaBars} from 'react-icons/fa'
 
 
 const Navbar = () => {
-    const[showLinks, setShowLinks] = useState(true)
+    const[showLinks, setShowLinks] = useState(false)
 
     const toggleLinks = () =>{
         setShowLinks(!showLinks)
