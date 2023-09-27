@@ -84,7 +84,7 @@ const Wrapper = styled.div`
   align-items: center;
 }
 
-  @media screen and  (min-width: 376px) {
+  @media screen and (min-width: 376px) {
     .container {
       padding-top:10rem;
      display: flex;
