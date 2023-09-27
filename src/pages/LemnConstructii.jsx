@@ -16,7 +16,7 @@ const LemnConstructii = () => {
 
 return(
   <Wrapper>
-    <>
+    <div className='layout'>
       <div className="text">
         <p>Preturile sunt negociabile in functie de cantittatea comandata</p>
         <p>Asiguram transport in orice zona a tarii</p>
@@ -34,15 +34,21 @@ return(
         })}
        
       </div>
-    </>
+    </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.div`
-  .container{
-    max-width:90vw;
-    height: 100vh;
+
+.layout {
+  display:flex;
+  // max-width:100%;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items: center;
+}
+  .container {d
     display: flex;
     flex-direction:column;
     justify-content:center;
@@ -50,7 +56,7 @@ const Wrapper = styled.div`
   }
   .item{
     width: 90vw;
-    height:20rem;
+    height:10rem;
     background:white;
     display:flex;
     flex-direction:column;
@@ -64,7 +70,7 @@ const Wrapper = styled.div`
     width:80%;
   }
 .title{
-  font-size:1.4rem;
+  font-size:1.2rem;
   text-transform:capitalize;
   weight:700;
   color:var(--primary-500);
@@ -84,13 +90,13 @@ const Wrapper = styled.div`
   align-items: center;
 }
 
-  @media screen and (min-width: 376px) {
-    .container {
-      padding-top:10rem;
-     display: flex;
-     justify-content: space-around;
-     align-items:center;
-     flex-wrap:wrap;
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap;
     }
 
     .text{
@@ -98,6 +104,7 @@ const Wrapper = styled.div`
     }
 
     .item{
+      height: 20rem;
       max-width:30rem;
     }
   }
