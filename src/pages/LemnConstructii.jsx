@@ -41,12 +41,8 @@ const Wrapper = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items: center;
-
-    // gap-row:3rem;
-    // gap-col:3rem;
   }
   .item{
-    // max-width:30rem;
     width: 90vw;
     height:20rem;
     background:white;
@@ -58,8 +54,8 @@ const Wrapper = styled.div`
     margin:2rem;
   }
   .image{
-max-height: 70%;
-width:80%;
+    max-height: 70%;
+    width:80%;
   }
 .title{
   font-size:1.4rem;
@@ -85,8 +81,6 @@ width:80%;
     .item{
       max-width:30rem;
     }
-
-   
   }
 `
 export default LemnConstructii

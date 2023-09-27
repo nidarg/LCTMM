@@ -26,9 +26,9 @@ const Navbar = () => {
                 <NavLink to='/' className='nav-link'>
                     Home
                 </NavLink>
-                <NavLink to='/despre' className='nav-link'>
+                {/* <NavLink to='/' className='nav-link'>
                     Despre
-                </NavLink>
+                </NavLink> */}
                 <NavLink to='/materiale-lemn-constructii' className='nav-link'>
                     Lemn Constructii
                 </NavLink>

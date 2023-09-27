@@ -15,18 +15,18 @@ const Despre = () => {
             backgroundSize: 'cover',
           }}
         >
-          <div className='text'>
+        
+          <p>LemnConstructiiTimisMaraMures</p>
+         
             <p>
               Santem o afacere de familie de omenie cu peste 20 de ani de
               experienta in domeniul prelucrarii lemnului.
-            </p>
-            <p>
-              {' '}
+              <br />
               Livram lemn rasinos prelucrat in functie de comenzi pentru
               depozite, constructori, fabrici, persoane fizice si alte tipuri de
               activitati in domeniu
-            </p>
-          </div>
+              </p>
+         
         </div>
         <div
           className='box-2'
@@ -48,25 +48,44 @@ const Despre = () => {
 }
 
 const Wrapper = styled.div`
+font-family: 'Acme';
+  .container {
+    width:100%;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      'a a'
+      'a a'
+      'b c';
+  }
   .box-1 {
-    height: 80vh;
-  }
-  .box-2,
-  .box-3 {
-    display: none;
-  }
-  .text {
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
     color: var(--primary-200);
+    font-size: clamp(1.3rem, 1.5vw, 1.5rem);
+   padding:0 2rem;
+    grid-area: a;
+    height:60vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: space-around;
+    justify-content: space-around;
+    align-items: center;
     line-height: 1.5;
-    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  
   }
+  .box-2 {
+    grid-area: b;
+    // display: block;
+  }
+  .box-3 {
+    grid-area: c;
+    // display: block;
+  }
+
+
+
+
+
 
   @media (min-width: 768px) {
     .container {
@@ -81,6 +100,16 @@ const Wrapper = styled.div`
 
     .box-1 {
       grid-area: a;
+      height: 80vh;
+      font-size: clamp(1.5rem, 2vw, 2rem);
+    }
+    .box-2 {
+      grid-area: b;
+      display: block;
+    }
+    .box-3 {
+      grid-area: c;
+      display: block;
     }
 
     .text {
@@ -95,14 +124,10 @@ const Wrapper = styled.div`
       line-height: 1.5;
       font-size: clamp(1.5rem, 2vw, 2rem);
     }
-    .box-2 {
-      grid-area: b;
-      display: block;
+    .main-title{
+      font-size: clamp(1.5rem, 2vw, 2rem);
     }
-    .box-3 {
-      grid-area: c;
-      display: block;
-    }
+   
   }
 `
 
