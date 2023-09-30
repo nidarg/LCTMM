@@ -27,7 +27,7 @@ return(
             <div key={item.id} className="item">
             <img className="image" src={item.img}/>
             <p className="title">{item.title}</p>
-            <p className="price">{item.price1} RON/mc</p>
+            <p className="price">{item.price1}</p>
           </div>
           )
           
