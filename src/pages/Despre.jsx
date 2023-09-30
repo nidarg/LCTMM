@@ -74,9 +74,9 @@ font-family: 'Fondamento', cursive;
     line-height: 1.5;
   
   }
-  // .title{
-  //   font-family: 'Fondamento', cursive;
-  // }
+  .title{
+    font-size:1.3rem;
+  }
   .despre{
     text-align: justify;
     text-justify: inter-word;
