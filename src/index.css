@@ -360,7 +360,11 @@ PROJECT CSS
   align-items: space-around;
 }
 
-
+.contact{
+  font-size:1.2rem;
+  font-weight: 700;
+  width:90vw;
+}
 
 @media screen and (min-width: 600px) {
   .text-box {
@@ -397,6 +401,7 @@ PROJECT CSS
     font-size: var(--large-text);
     background: white;
     margin-bottom: 2rem;
+    
   }
   .contact p, h5{
     margin-bottom: 1rem;

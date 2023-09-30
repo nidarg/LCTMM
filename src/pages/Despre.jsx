@@ -16,10 +16,10 @@ const Despre = () => {
           }}
         >
         
-          <p>LemnConstructiiTimisMaraMures</p>
+          <p className='title'>LemnConstructiiTimisMaraMures</p>
          
-            <p>
-              Santem o afacere de familie de omenie cu peste 20 de ani de
+            <p className='despre'>
+              <span>Santem</span> o afacere de familie de omenie cu peste 20 de ani de
               experienta in domeniul prelucrarii lemnului.
               <br />
               Livram lemn rasinos prelucrat in functie de comenzi pentru
@@ -48,7 +48,8 @@ const Despre = () => {
 }
 
 const Wrapper = styled.div`
-font-family: 'Acme';
+// @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+font-family: 'Fondamento', cursive;
   .container {
     width:100%;
     gap: 1rem;
@@ -72,6 +73,16 @@ font-family: 'Acme';
     align-items: center;
     line-height: 1.5;
   
+  }
+  // .title{
+  //   font-family: 'Fondamento', cursive;
+  // }
+  .despre{
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  span{
+    padding-left:1rem;
   }
   .box-2 {
     grid-area: b;

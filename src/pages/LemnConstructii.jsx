@@ -1,6 +1,7 @@
 import React from 'react'
 import{useFetchItems} from '../fetchItems'
 import styled from 'styled-components'
+import transportImage from '../assets/transport.jpeg'
 
 const LemnConstructii = () => {
   const {loading, items} = useFetchItems()
@@ -17,9 +18,12 @@ const LemnConstructii = () => {
 return(
   <Wrapper>
     <div className='layout'>
-      <div className="text">
-        <p>Preturile sunt negociabile in functie de cantittatea comandata</p>
-        <p>Asiguram transport in orice zona a tarii</p>
+      <div className="text" style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(${transportImage})`,
+            backgroundSize: 'cover',
+          }}>
+        <p>Preturile sunt negociabile in functie de cantitatea comandata  <br />
+        Asiguram transport in orice zona a tarii</p>
       </div>
       <div className='container'>
         {items.map((item)=>{
@@ -81,13 +85,22 @@ const Wrapper = styled.div`
   color:var(--primary-500);
 }
 .text{
-  margin:2rem auto 0;
-  color:var(--primary-500);
+  width: 90vw;
+  height:30rem;
+  font-size:1.3rem;
+  color:var(--primary-300);
   font-size:1rem;
   display:flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+  
+}
+.text p{
+  text-align: justify;
+  text-justify: inter-word;
+  padding:0 1rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -101,6 +114,7 @@ const Wrapper = styled.div`
 
     .text{
       font-size:1.4rem;
+      min-width: 100vw;
     }
 
     .item{

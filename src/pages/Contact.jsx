@@ -36,7 +36,7 @@ const Contact = () => {
       <div className="contact">
           <h5>Informatii de contact:</h5>
         <p>Email: lctmmoffice@gmail.com</p>
-        <p>Telefoane:0743845283 / 0770804170 </p>
+        <p>Nicu: 0743845283 <br />Liviu:  0770804170 </p>
       </div>
       <form className='form' ref={form} onSubmit={sendEmail}>
       
