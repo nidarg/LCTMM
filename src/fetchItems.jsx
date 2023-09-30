@@ -16,11 +16,11 @@ export const useFetchItems = ()=>{
         try {
             const response = await client.getEntries({content_type:'items'})
             const items = response.items.map((item)=>{
-                const {title,price,image} = item.fields
+                const {title,price1,image} = item.fields
                 const id = item.sys.id
                 const img = image?.fields?.file?.url
                 console.log(img);
-            return{id,title,price,img}
+            return{id,title,price1,img}
        
             })
             setItems(items)
