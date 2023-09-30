@@ -24,7 +24,7 @@ const Navbar = () => {
            {showLinks &&(
                 <div className="nav-links">
                 <NavLink to='/' className='nav-link'>
-                    Home
+                    Acasa
                 </NavLink>
                 {/* <NavLink to='/' className='nav-link'>
                     Despre
@@ -33,7 +33,7 @@ const Navbar = () => {
                     Lemn Constructii
                 </NavLink>
                 <NavLink to='/lemn-foc-peleti' className='nav-link'>
-                    Lemn de Foc
+                    Lemn de Foc/Peleti
                 </NavLink>
                 <NavLink to='/contact' className='nav-link'>
                     Contact
