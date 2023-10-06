@@ -1,6 +1,6 @@
 import React from 'react'
 import aboutImage from '../assets/aboutImage.png'
-import firstimage from '../assets/firstimage.jpeg'
+import image3 from '../assets/image3.jpeg'
 import image2 from '../assets/image2.jpeg'
 import { styled } from 'styled-components'
 
@@ -31,14 +31,14 @@ const Despre = () => {
         <div
           className='box-2'
           style={{
-            backgroundImage: `url(${firstimage})`,
+            backgroundImage: `url(${image2})`,
             backgroundSize: 'cover',
           }}
         ></div>
         <div
           className='box-3'
           style={{
-            backgroundImage: `url(${image2})`,
+            backgroundImage: `url(${image3})`,
             backgroundSize: 'cover',
           }}
         ></div>
